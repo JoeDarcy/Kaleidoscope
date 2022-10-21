@@ -19,11 +19,11 @@ public class AudioVisualiser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetSpetrumAudioSource();
+        GetSpectrumAudioSource();
         MakeFrequencyBands();
     }
 
-    private void GetSpetrumAudioSource()
+    private void GetSpectrumAudioSource()
     {
         music.GetSpectrumData(musicSamples, 0, FFTWindow.Blackman);
     }
