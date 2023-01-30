@@ -21,6 +21,12 @@ public class EffectController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Ouput frequency info
+        for(int i = 0; i <=  7; i++)
+        {
+            //Debug.Log("Frequency band " + i + ": " + AudioVisualiser.frequencyBands[i]);
+        }
+
         burstCount = (int)AudioVisualiser.frequencyBands[frequencyBand] * 25;
         maxLifetime = AudioVisualiser.difference * 100;
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.027711414, g: 0.0026849506, b: 0.008359297, a: 1}
+  m_IndirectSpecularColor: {r: 0.027711177, g: 0.0026849294, b: 0.008359235, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &198320709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 198320711}
+  - component: {fileID: 198320710}
+  m_Layer: 0
+  m_Name: Amplitude_Sampler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &198320710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198320709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb48efcf31def48c0a43c16288948dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  updateStep: 0.1
+  sampleDataLength: 1024
+--- !u!4 &198320711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198320709}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &637547099 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6952584002338349709, guid: 301098219226946babc7ab0a6ede96f3,
@@ -2633,6 +2680,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Audio_Visualiser
       objectReference: {fileID: 0}
+    - target: {fileID: 2015552043547783573, guid: 29416918fa7630341a2c8952ff12795e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Test_Audio
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29416918fa7630341a2c8952ff12795e, type: 3}
 --- !u!1001 &3053713999978452850
@@ -2714,7 +2766,7 @@ PrefabInstance:
     - target: {fileID: 2832396467539898637, guid: 301098219226946babc7ab0a6ede96f3,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6952584001487430368, guid: 301098219226946babc7ab0a6ede96f3,
         type: 3}
